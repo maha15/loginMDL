@@ -1,0 +1,17 @@
+
+.square-card.mdl-card {
+	width: 500px;
+	height: 350px;
+	align-items: center;
+	margin-top: 100px;
+
+}
+.mdl-layout__content{
+	background: URL('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/3D-Beautiful-Night-Wallpaper-1366x768.jpg') center / cover;
+}
+
+#logoimg{
+
+	position: relative; 
+	height: 65px;
+}

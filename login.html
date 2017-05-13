@@ -1,0 +1,124 @@
+<!--> 
+
+    Authored By: Maha Amjad
+    Date: May 13 2017
+
+<-->
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en-US">
+
+
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+
+  <!-- For Mobile Device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Material Design Headers -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_orange.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script src="extvalidate.js"></script>
+
+</head>
+
+
+<body >
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header"  >
+    <div class="mdl-layout__header-row">
+    
+      <!-- Title -->
+      <span class="mdl-layout-title">
+      <img id="logoimg" src="images/logos.png" alt="http://www.strangersocial.com/wp-content/uploads/2015/06/Mobile-Logo-Retina.png" >
+      </span>
+
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      
+    </div>
+  </header>
+ 
+  <main class="mdl-layout__content"  >
+    <div class="page-content" align="center"  >
+
+
+      <div class="square-card mdl-card mdl-shadow--16dp" align="center" id="logincard">
+
+        <div class="mdl-card__title" >
+           <h2 class="mdl-card__title-text">Login</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+
+             <table  style="text-align: center;" >
+             <tr>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="user" pattern="[A-Z,a-z, ]*">
+                  <label class="mdl-textfield__label" for="user">User name</label>
+                  <span class="mdl-textfield__error">Letters and spaces only</span>
+                </div>
+             </tr>
+
+             <tr>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="password" pattern="[A-Z,a-z,0-9, ]*">
+                  <label class="mdl-textfield__label" for="password">Password</label>
+                  <span class="mdl-textfield__error">Letters,numbers and spaces only</span>
+                </div>
+             </tr>
+
+             <tr>
+             <th>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkboxRemeberMe">
+                  <input type="checkbox" id="checkboxRemeberMe" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label">Remember Me</span>
+                </label>
+              </th>
+
+              <th>
+                <form onsubmit="return confirm('Hint: \t UserName= maha \n \t \t Password= 123');">
+          
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" style="margin-top: 13px">
+                    <!-- Help Icon -->
+                    <i class="material-icons">&#xE8FD;</i> 
+                  </button> 
+
+                </form>
+              </th>
+             </tr>
+            </table>
+            
+           
+           
+
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="validate()"> Submit</a>
+        </div>
+        
+      </div>
+       
+
+       
+
+
+    </div>
+
+
+  </main>
+
+
+    
+</div>
+
+
+
+</body>
+</html>
